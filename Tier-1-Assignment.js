@@ -30,13 +30,17 @@ console.log(dataType(true));    // boolean
 
 /* ------------------------------------------------ */
 
-function thirdPower (input) {
-    return input ** 3;
-};
+function productValue () {
+    let total = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        total += arguments[i];
+        
+    }
+    return total;
+}
 
-console.log(powerOfThree(3));       // 27
-console.log(powerOfThree(100));     // 1000000
-
+console.log(productValue(1, 2, 3, 5, 4, 10));   // 25
+console.log(productValue(123, 165, (2**3)));    // 296
 
 /* ------------------------------------------------ */
 
