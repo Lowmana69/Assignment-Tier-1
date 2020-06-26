@@ -42,7 +42,7 @@ console.log(powerOfThree(100));     // 1000000
 
 let array1 = [1, 2, 3, 4, 5];
 let array2 = [12, 14, 16, 18];
-const totalSum = function(array) {
+function totalSum (array) {
     return array.reduce((a, b) => {
         return a + b
     }, 0)
